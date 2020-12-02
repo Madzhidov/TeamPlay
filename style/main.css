@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+/*CSS reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, hr {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/*CSS Reset*/
+body {
+    font-family: Jost;
+
+}
+
+header {
+    z-index: 3;
+    min-width: 820px;
+    position: fixed;
+    width: 100%;
+    background: white;
+}
+
+.navigation {
+    float: left;
+    margin: 32px;
+
+}
+
+li {
+    margin: 0 32px 0px 0px;
+}
+
+.inline * {
+    display: inline-block;
+}
+
+#logo {
+    display: block;
+    height: 90px;
+    width: auto;
+    padding-bottom: -2px;
+    margin-left: 45vw;
+}
+
+.phone {
+    margin: 32px 45px;
+    float: right;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+.space {
+    width: 100%;
+}
+
+#preview {
+    background: url(../img/farm.png) no-repeat, rgb(135, 196, 253);
+    background-size: cover;
+    height: 800px;
+}
+
+#banner {
+    display: block;
+    width: 423px;
+    padding-top: 300px;
+    padding-left: 166px;
+}
+
+#banner_txt {
+    display: inline-block;
+    font-size: 64px;
+    font-family: Mistral;
+}
+
+.btn {
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 16px;
+    background-color: #0047FF;
+    color: #B9DDFF;
+    text-align: center;
+}
+
+#banner_btn {
+    font-size: 36px;
+    color: #BFFFC5;
+    background-color: #24B732;
+    font-weight: bold;
+    padding-left: 66px;
+    padding-right: 66px;
+}
+
+#photo-banner {
+    float: left;
+    margin-top: -250px;
+    margin-left: 773px;
+}
+
+#milk-banner {
+    width: 644px;
+    margin-top: -50px;
+}
+
+.slogan {
+    font-family: 'Bad Script';
+    text-wrap: none;
+    text-align: center;
+    font-size: 40px;
+}
+
+.goods {
+    height: 500px;
+}
+
+h2 {
+    color: #0047FF;
+    font-size: 36px;
+    text-align: center;
+}
+
+h3 {
+    font-style: italic;
+    font-size: 24px;
+    text-align: center;
+}
+
+.title img {
+    position: center;
+    text-align: center;
+}
+
+.switch-buttons {
+    margin-top: 19px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.switch-buttons .btn {
+    width: 138px;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.chosen {
+    background-color: #24B732;
+    color: #BFFFC5;
+}
+
+.item-list {
+    position: absolute;
+    width: 100%;
+    height: 335px;
+    background-color: #8CD4FD;
+    border-radius: 4px;
+}
+
+.item {
+    margin-right: 16px;
+    margin-top: 3px;
+    height: 329px;
+    width: 285px;
+    background-color: rgba(204, 252, 255, 0.80);
+    border-radius: 53px;
+}
+
+.info-img {
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 24px;
+    margin-left: 14vw;
+}
+
+.wrapper {
+    width: 20%;
+    bottom: 10px;
+    position: absolute;
+    text-align: center;
+}
+
+.item-img {
+    position: relative;
+    max-width: 80%;
+    max-height: 230px;
+
+}
+
+.opacity-img {
+    opacity: 20%;
+}
+
+.item-description {
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: center;
+    border-radius: 7px;
+    margin: 60px auto 0px auto;
+    padding: 5px;
+    height: 248px;
+    width: 215px;
+    background: rgba(0, 128, 255, 0.35);
+}
+
+.hidden {
+    display: none;
+}
+
+.description-title {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.cost{
+    color: red;
+    width: 200px;
+    font-size: 20px;
+    position: relative;
+    top : -40px
+
+}
+
+.animal_milk-item {
+    z-index: 2;
+    max-width: 80%;
+    max-height: 230px;
+}
+
+#sales .item-list {
+    background-color: rgba(255, 0, 0, 0.71);
+    margin-top: 20px;
+}
+
+#sales .item {
+    background-color: rgba(255, 205, 75, 0.51);
+}
+
+#sales .item-description {
+    background: rgb(69, 137, 255);
+}
+
+#sales .cost {
+    color: #4d49cb;
+}

@@ -4,7 +4,8 @@ const hover_handler = function (class_name, img_src) {
     const animal_img = document.createElement('img')
     animal_img.className = 'animal_milk-item'
     animal_img.src = img_src
-    wrapper.className = 'wrapper'
+    wrapper.classList.add('wrapper')
+    wrapper.classList.add('foreground_item_img')
     wrapper.append(animal_img)
     let items = document.querySelectorAll('.item')
     let items_list = []

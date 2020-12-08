@@ -5,8 +5,8 @@
     <title>Landing</title>
     <link rel="stylesheet" href="style/main.css">
     <script async type="text/javascript" src="javascript/sale.js"></script>
+    <script async type="text/javascript" src="javascript/gallery.js"></script>
 </head>
-<body>
 <header>
     <ul class="navigation inline">
         <li>
@@ -22,16 +22,17 @@
             Контакты
         </li>
     </ul>
-    <div class='phone'>+77512580128</div>
+    <div id='phone'>+77512580128</div>
     <a href="#">
         <img id='logo' src="img/logo.png" alt="">
     </a>
-    <hr>
 </header>
 <div class="space">
 
 </div>
 <article id="preview">
+    <div class="space">
+    </div>
     <div id="banner">
         <div id="banner_txt">
             Свежее молоко <br> прямо с фермы
@@ -41,11 +42,12 @@
         </div>
     </div>
     <div id="photo-banner">
-        <img id="milk-banner" src="img/milk.png" alt="">
+        <img id="photo-banner-img" src="img/milk.png" alt="">
         <div class="slogan">
             С заботой о Вас и Ваших детях!
         </div>
     </div>
+
 </article>
 <article class="goods">
     <div class="title">
@@ -118,8 +120,10 @@
                     <span class="description-title">
                         Коровье молоко
                     </span>
-                    Коровье молоко, богато питательными веществами , такими как белки, углеводы, жиры, витамины группы
-                    А, Е, К, С, D, В, РР и минералами. Белок коровьего молока является наиболее ценным, потому что он
+                    Коровье молоко, богато питательными веществами , такими как белки, углеводы, жиры, витамины
+                    группы
+                    А, Е, К, С, D, В, РР и минералами. Белок коровьего молока является наиболее ценным, потому что
+                    он
                     является источником всех аминокислот, необходимых для организма; казеина, глобулина и альбумина,
                     которые особенно важны для детей и спортсменов.
 
@@ -136,9 +140,11 @@
                     <span class="description-title ">
                         Козье молоко
                     </span>
-                    Это молоко полезно для всех. У него невысокая калорийность, поэтому его часто включают в диетическое
+                    Это молоко полезно для всех. У него невысокая калорийность, поэтому его часто включают в
+                    диетическое
                     меню, оно выводит токсины из организма и снижает уровень холестерина в крови.
-                    Козье молоко богато натуральным протеином, разгоняет метаболизм и повышает выносливость у мужчин,
+                    Козье молоко богато натуральным протеином, разгоняет метаболизм и повышает выносливость у
+                    мужчин,
                     активно занимающихся спортом.
                     Во время беременности этот продукт борется с дефицитом кальция и витамина В12 у молодых мам.
                 </div>
@@ -191,7 +197,8 @@
                     Готовится из филейной вырезки конины.
                     Куски мяса солят сухим посолом, укладывают в кастрюлю для просаливания.
                     Просолившееся мясо просушивают, вялят, коптят и варят по типу жала.
-                    Варить жая можно вместе с казы в одной воде и тоже 2 часа. Перед подачей на стол жая тонко нарезают
+                    Варить жая можно вместе с казы в одной воде и тоже 2 часа. Перед подачей на стол жая тонко
+                    нарезают
                     и украшают зеленью.
                 </div>
             </div>
@@ -248,7 +255,6 @@
         <h2>Выгодное предложение!</h2>
         <h3>Только сегодня!</h3>
     </div>
-    <!--Скидки-->
     <div class="item-list flex">
         <div class="item">
             <img class="info-img" src="img/info_icon.svg" alt="">
@@ -286,11 +292,83 @@
                 <span class="description-title ">
                         Все виды молока
                     </span>
-                В предложение входит 1 л шубата, 1 л кумса, 10 л коровьего молока, 2 л козбего молока
+                В предложение входит 1 л шубата, 1 л кумса, 10 л коровьего молока, 2 л козьего молока
             </div>
         </div>
     </div>
 </article>
+<div class="space" style="height: 20px"></div>
+<article id="gallery">
+    <div class="title">
+        <h2>Наша ферма:</h2>
+    </div>
+    <div id="horse_gallery" class="flex">
+        <img src="img/Gallery/horse-1.jpg" id="main_photo">
+        <ul id="horse_gallery_thumbnails" class="flex">
+            <li>
+                <img src="img/Gallery/horse-1.jpg" class="thumbnail active">
+            </li>
+            <li>
+                <img src="img/Gallery/horse-2.jpg" class="thumbnail">
+            </li>
+            <li>
+                <img src="img/Gallery/horse-3.jpg" class="thumbnail">
+            </li>
+            <li>
+                <img src="img/Gallery/horse-4.jpg" class="thumbnail">
+            </li>
+            <li>
+                <img src="img/Gallery/horse-5.jpg" class="thumbnail ">
+            </li>
+            <li>
+                <img src="img/Gallery/horse-6.jpg" class="thumbnail">
+            </li>
+        </ul>
+    </div>
+</article>
+<div id="feedback">
+    <div class="title">
+        <h2>Отзывы покупателей</h2>
+        <h3>Благодаря вашим отзывам мы становимся лучше!</h3>
+    </div>
+    <div class="feedback_messages flex">
+        <div class="message left flex">
+            <img class="thumbnail" src="img/message-icon.jpg">
+            <div class="content">
+                <div class="user_name">
+                    Алена, 30 лет
+                </div>
+                <div class="context">Прекрасный магазин с хорошим обслуживанием. Уголок прекрасной страны с хорошими
+                    традициями и обычаями.
+                </div>
+            </div>
+        </div>
+        <div class="message right flex">
+            <img class="thumbnail" src="img/message-icon.jpg">
+            <div class="content">
+                <div class="user_name">
+                    Дмитрий, 20 лет
+                </div>
+                <div class="context">Уже более года являюсь клиентом данного магазина. Обслуживание уже как в семье.
+                    Всегда свежая продукции без ГМО и консервантов.
+                </div>
+            </div>
+        </div>
+        <div class="message left flex">
+            <img class="thumbnail" src="img/message-icon.jpg">
+            <div class="content">
+                <div class="user_name">
+                    Нурлан, 24 года
+                </div>
+                <div class="context">Прекрасный магазин со свежей продукцией. Уехал из дома давно, но питаюсь как
+                    дома.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
 </body>
 <script type="text/javascript" src="javascript/staff.js"></script>
 </html>

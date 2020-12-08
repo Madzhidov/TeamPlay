@@ -53,10 +53,12 @@ table {
 
 a {
     color: #000;
+    cursor: pointer;
     text-decoration: none;
 }
 
 /*CSS Reset*/
+
 body {
     font-family: Jost;
 
@@ -64,16 +66,15 @@ body {
 
 header {
     z-index: 3;
-    min-width: 820px;
     position: fixed;
     width: 100%;
     background: white;
+    border-bottom: 1px solid black;
 }
 
 .navigation {
     float: left;
     margin: 32px;
-
 }
 
 li {
@@ -92,14 +93,11 @@ li {
     margin-left: 45vw;
 }
 
-.phone {
-    margin: 32px 45px;
+#phone {
+    margin: 32px 32px 0 10px;
     float: right;
 }
 
-hr {
-    border: 1px solid black;
-}
 
 .space {
     width: 100%;
@@ -111,20 +109,23 @@ hr {
     height: 800px;
 }
 
+
+#preview .space {
+    height: 300px;
+}
+
 #banner {
-    display: block;
     width: 423px;
-    padding-top: 300px;
-    padding-left: 166px;
+    padding-left: 10vw;
 }
 
 #banner_txt {
-    display: inline-block;
     font-size: 64px;
     font-family: Mistral;
 }
 
 .btn {
+    z-index: 1;
     cursor: pointer;
     border-radius: 25px;
     padding: 16px;
@@ -134,7 +135,8 @@ hr {
 }
 
 #banner_btn {
-    font-size: 36px;
+    display: inline-block;
+    font-size: 2em;
     color: #BFFFC5;
     background-color: #24B732;
     font-weight: bold;
@@ -143,25 +145,23 @@ hr {
 }
 
 #photo-banner {
-    float: left;
-    margin-top: -250px;
-    margin-left: 773px;
+    float: right;
+    margin-top: -290px;
 }
 
-#milk-banner {
-    width: 644px;
-    margin-top: -50px;
+#photo-banner-img {
+    width: 44vw;
 }
 
 .slogan {
     font-family: 'Bad Script';
     text-wrap: none;
     text-align: center;
-    font-size: 40px;
+    font-size: 2.2em;
 }
 
 .goods {
-    height: 500px;
+    display: block;
 }
 
 h2 {
@@ -176,6 +176,10 @@ h3 {
     text-align: center;
 }
 
+.title {
+    margin-bottom: 5px;
+}
+
 .title img {
     position: center;
     text-align: center;
@@ -188,6 +192,9 @@ h3 {
 .flex {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
 }
 
 .switch-buttons .btn {
@@ -202,9 +209,9 @@ h3 {
 }
 
 .item-list {
-    position: absolute;
+
     width: 100%;
-    height: 335px;
+    height: auto;
     background-color: #8CD4FD;
     border-radius: 4px;
 }
@@ -223,21 +230,28 @@ h3 {
     cursor: pointer;
     position: absolute;
     margin-top: 24px;
-    margin-left: 14vw;
+    margin-left: 220px;
 }
 
 .wrapper {
-    width: 20%;
-    bottom: 10px;
-    position: absolute;
+    display: table-cell;
+    height: inherit;
+    width: inherit;
+    vertical-align: middle;
     text-align: center;
 }
 
-.item-img {
-    position: relative;
-    max-width: 80%;
-    max-height: 230px;
+.foreground_item_img {
+    display: block;
+    position: absolute;
+    min-height: 232px;
+    height: auto;
+    margin-top: -290px;
+}
 
+.item-img {
+    max-height: 230px;
+    max-width: 260px;
 }
 
 .opacity-img {
@@ -245,13 +259,14 @@ h3 {
 }
 
 .item-description {
+    position: absolute;
     font-family: 'Times New Roman';
     font-weight: bold;
     font-size: 14px;
     text-align: center;
     vertical-align: center;
     border-radius: 7px;
-    margin: 60px auto 0px auto;
+    margin: -269px auto auto 25px;
     padding: 5px;
     height: 248px;
     width: 215px;
@@ -268,13 +283,17 @@ h3 {
     margin-bottom: 10px;
 }
 
-.cost{
+.cost {
     color: red;
     width: 200px;
     font-size: 20px;
     position: relative;
-    top : -40px
+    top: -40px
 
+}
+
+#sales {
+    display: block;
 }
 
 .animal_milk-item {
@@ -298,4 +317,137 @@ h3 {
 
 #sales .cost {
     color: #4d49cb;
+}
+
+#gallery {
+    padding: 10px;
+    background-color: #8CD4FD;
+}
+
+#horse_gallery_thumbnails {
+    margin-left: 2px;
+    flex-direction: column;
+    max-height: 500px;
+}
+
+.thumbnail {
+    border-radius: 25px;
+    height: 93px;
+    width: 130px;
+    border: rgba(0, 0, 0, 0) 2px solid;
+}
+
+.active {
+    border: #00ffb9 2px solid;
+}
+
+#main_photo {
+    height: 495px;
+    width: 800px;
+    border-radius: 10px;
+}
+.feedback_messages{
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: #87EFFD;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+.message {
+    margin: 5px;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.message .content {
+    margin-left: 5px;
+}
+
+.message .user_name {
+    margin: 5px 0;
+    font-size: 36px;
+    color: #0047FF;
+}
+
+.user_name .context {
+    font-size: 0.5em;
+    color: black;
+}
+
+.message .thumbnail {
+    height: 100px;
+    width: auto;
+}
+.right {
+    margin-left: 45%;
+}
+
+@media only screen and (max-width: 800px) {
+    .navigation li {
+        display: block;
+        margin: 0 0 5px 0;
+    }
+
+    #logo {
+        margin-top: 35px;
+    }
+
+    #phone {
+        margin: 67px 32px 0 10px;
+    }
+
+    #main_photo {
+        height: 247px;
+        width: 400px
+    }
+    .message {width: 80%}
+    .right {margin: 5px}
+}
+
+@media only screen and (max-width: 1035px) {
+    #preview * {
+        margin: 0;
+        padding: 0;
+        float: none
+    }
+
+    #preview .space {
+        height: 150px
+    }
+
+    #banner_btn {
+        display: block;
+        padding: 15px 0;
+        width: 100%
+    }
+
+    #banner {
+        display: block;
+        text-align: center;
+        width: auto
+    }
+
+    #photo-banner {
+        display: block;
+        text-align: center
+    }
+
+    #photo-banner-img {
+        width: 455.49px;
+    }
+
+    #horse_gallery_thumbnails {
+        flex-direction: row;
+        margin: 2px 2px;
+    }
+
+
+}
+
+@media only screen and (min-width: 1036px) {
 }

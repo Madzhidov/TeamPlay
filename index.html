@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style/main.css">
     <script async type="text/javascript" src="javascript/sale.js"></script>
     <script async type="text/javascript" src="javascript/gallery.js"></script>
+    <script async type="text/javascript" src="javascript/popup.js"></script>
 </head>
 <header>
     <ul class="navigation inline">
@@ -326,7 +327,7 @@
         </ul>
     </div>
 </article>
-<div id="feedback">
+<article id="feedback">
     <div class="title">
         <h2>Отзывы покупателей</h2>
         <h3>Благодаря вашим отзывам мы становимся лучше!</h3>
@@ -366,9 +367,14 @@
             </div>
         </div>
     </div>
-</div>
-</div>
-</div>
+</article>
+
+<form>
+    Email: <input type="email" name="email"><br>
+    Name: <input type="text" name="user_name"><br>
+    Message: <input type="text" name="message_text"><br>
+    <input type="button" name="submit" value="Submit" onclick="sendMessage()">
+</form>
 </body>
 <script type="text/javascript" src="javascript/staff.js"></script>
 </html>

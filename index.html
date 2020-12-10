@@ -20,7 +20,9 @@
             Доставка
         </li>
         <li>
-            Контакты
+            <a href="contact.html">
+                Контакты
+            </a>
         </li>
     </ul>
     <div id='phone'>+77512580128</div>
@@ -50,7 +52,7 @@
     </div>
 
 </article>
-<article class="goods">
+<article id="goods">
     <div class="title">
         <h2>Продукция с нашей фермы!</h2>
         <h3>Всегда свежая и питательная!</h3>
@@ -375,6 +377,14 @@
     Message: <input type="text" name="message_text"><br>
     <input type="button" name="submit" value="Submit" onclick="sendMessage()">
 </form>
+<div id="up_buttons">
+    <a class="up_button btn" onclick="sendMessage()">
+        📧
+    </a>
+    <a class="up_button btn" href="#">
+        ☝
+    </a>
+</div>
 </body>
 <script type="text/javascript" src="javascript/staff.js"></script>
 </html>

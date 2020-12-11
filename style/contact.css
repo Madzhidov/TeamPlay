@@ -74,34 +74,8 @@
 
 @media only screen and (max-width: 560px) {
 
-    #logo {
-        display: none;
-    }
-
     #contacts * {
         flex-direction: column;
         flex-wrap: wrap;
     }
-}
-@media only screen and (max-width: 900px) {
-    .navigation li {
-        display: block;
-        margin: 0 0 5px 0;
-    }
-
-    #logo {
-        margin-top: 35px;
-    }
-
-    header .phone {
-        margin: 67px 32px 0 10px;
-    }
-}
-
-@media only screen and (max-width: 1280px) {
-
-
-}
-
-@media only screen and (min-width: 1280px) {
 }

@@ -95,7 +95,7 @@ for (let i = 1; i < switch_buttons.childNodes.length; i += 2) {
     })
 }
 
-hover_handler('horse', 'img/horse.png')
-hover_handler('camel', 'img/camel.png')
-hover_handler('cow', 'img/cow.png')
-hover_handler('goat', 'img/goat.png')
+hover_handler('horse', 'img/main/horse.png')
+hover_handler('camel', 'img/main/camel.png')
+hover_handler('cow', 'img/main/cow.png')
+hover_handler('goat', 'img/main/goat.png')

@@ -135,3 +135,27 @@ h2 {
 .up_button:hover {
     opacity: 1;
 }
+
+@media only screen and (max-width: 560px) {
+
+    #logo {
+        display: none;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .navigation li {
+        display: block;
+        margin: 0 0 5px 0;
+    }
+
+    #logo {
+        margin-top: 35px;
+    }
+
+    header .phone {
+        margin: 67px 32px 0 10px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+}

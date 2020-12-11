@@ -1,110 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
-/*CSS reset*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video, hr {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-}
-
-ol, ul {
-    list-style: none;
-}
-
-blockquote, q {
-    quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-a {
-    color: #000;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-/*CSS Reset*/
-
-body {
-    font-family: Jost;
-
-}
-
-header {
-    z-index: 3;
-    position: fixed;
-    width: 100%;
-    background: white;
-    border-bottom: 1px solid black;
-}
-
-.navigation {
-    float: left;
-    margin: 32px;
-}
-
-li {
-    margin: 0 32px 0px 0px;
-}
-
-.inline * {
-    display: inline-block;
-}
-
-#logo {
-    display: block;
-    height: 90px;
-    width: auto;
-    padding-bottom: -2px;
-    margin-left: 45vw;
-}
-
-#phone {
-    margin: 32px 32px 0 10px;
-    float: right;
-}
-
-
-.space {
-    width: 100%;
-}
-
 #preview {
-    background: url(../img/farm.png) no-repeat, rgb(135, 196, 253);
+    background: url(../img/main/farm.png) no-repeat, rgb(135, 196, 253);
     background-size: cover;
     height: 800px;
 }
@@ -122,16 +17,6 @@ li {
 #banner_txt {
     font-size: 64px;
     font-family: Mistral;
-}
-
-.btn {
-    z-index: 1;
-    cursor: pointer;
-    border-radius: 25px;
-    padding: 16px;
-    background-color: #0047ff;
-    color: #B9DDFF;
-    text-align: center;
 }
 
 #banner_btn {
@@ -163,13 +48,6 @@ li {
 #goods {
     display: block;
 }
-
-h2 {
-    color: #0047FF;
-    font-size: 36px;
-    text-align: center;
-}
-
 h3 {
     font-style: italic;
     font-size: 24px;
@@ -356,7 +234,6 @@ h3 {
 }
 .message {
     margin: 5px;
-    justify-content: flex-start;
     flex-wrap: nowrap;
     background: rgba(255, 255, 255, 0.3);
     padding: 10px;
@@ -387,34 +264,13 @@ h3 {
     margin-left: 45%;
 }
 
-input {
-    border-radius: 10px;
-}
+@media only screen and (max-width: 560px) {
 
-form {
-    border-radius: 5px;
-    background: rgb(188, 188, 188);
-    display: inline-block;
-    padding: 25px;
+    #logo {
+        display: none;
+    }
 }
-
-#up_buttons {
-    position: fixed;
-    right: 50px;
-    bottom: 50px;
-}
-
-.up_button {
-    margin-left: 10px;
-    background: rgba(0, 71, 255);
-    opacity: 0.5;
-}
-
-.up_button:hover {
-    opacity: 1;
-}
-
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
     .navigation li {
         display: block;
         margin: 0 0 5px 0;
@@ -424,7 +280,7 @@ form {
         margin-top: 35px;
     }
 
-    #phone {
+    header .phone {
         margin: 67px 32px 0 10px;
     }
 

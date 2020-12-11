@@ -1,0 +1,49 @@
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    left: 0px;
+    background: #87D3FD;
+}
+.info * {
+    padding: 10px;
+}
+.info img {
+    max-height: 315px;
+}
+p{
+    font-size: 36px;
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+@media only screen and (max-width: 560px) {
+
+    #logo {
+        display: none;
+    }
+
+    #contacts * {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .navigation li {
+        display: block;
+        margin: 0 0 5px 0;
+    }
+
+    #logo {
+        margin-top: 35px;
+    }
+
+    header .phone {
+        margin: 67px 32px 0 10px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+}

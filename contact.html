@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Contacts</title>
-    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="style/contact.css">
 </head>
 <body>
 <header>
@@ -12,30 +13,98 @@
             Продукция
         </li>
         <li>
-            О молоке
+            <a href="history.html">
+                О молоке
+            </a>
         </li>
         <li>
             Доставка
         </li>
         <li>
-            Контакты
+            <a href="contact.html">
+                Контакты
+            </a>
         </li>
     </ul>
-    <div id='phone'>+77512580128</div>
-    <a href="#">
-        <img id='logo' src="img/logo.png" alt="">
+    <div class='phone'>+77512580128</div>
+    <a href="index.html">
+        <img id='logo' src="img/main/logo.png" alt="">
     </a>
 </header>
 <div class="space"></div>
 <article id="contacts">
     <div class="title">
-        <h2>Наши контакты.</h2>
-        <h3>всегда на связи!</h3>
+        <h2>Информация:</h2>
     </div>
-    <div id="block_contacts">
-        
+    <div class="block_contact flex">
+        <div class="contact flex">
+            <img class="thumbnail" src="img/contacts/location.svg">
+            <div class="content">
+                <div class="contact_name">
+                    Юридический адресс:
+                </div>
+                <div class="context">
+                    Россия, Санкт-Петербург, Конный переулок 1
+                </div>
+                <div class="context">
+                    <img src="img/main/map.png">
+                </div>
+            </div>
+        </div>
+        <div class="contact flex">
+            <img class="thumbnail" src="img/contacts/time.svg">
+            <div class="content">
+                <div class="contact_name">
+                    График работы складов и офисов компании:
+                </div>
+                <div class="context">
+                    Пн-Пт с 10:00 до 20:00 с перерывом на обед
+                </div>
+                <div class="description">
+                    Без выходных
+                </div>
+            </div>
+        </div>
+        <div class="contact flex">
+            <img class="thumbnail" src="img/contacts/mail.svg">
+            <div class="content">
+                <div class="contact_name">
+                    Электронная почта:
+                </div>
+                <div class="context">
+                    coumiss_farm_company@gmail.com
+                </div>
+                <div class="description">
+                    Отвечаем втечении 15 минут!
+                </div>
+            </div>
+        </div>
+        <div class="contact flex">
+            <img class="thumbnail" src="img/contacts/phone.svg">
+            <div class="content">
+                <div class="contact_name">
+                    Наши телефоны:
+                </div>
+                <div class="context">
+                    +7 912 554 05 059
+                </div>
+                <div class="context">
+                    +7 11 154 05 059
+                </div>
+
+            </div>
+        </div>
+
     </div>
 </article>
+<div id="up_buttons">
+    <a class="up_button btn" onclick="sendMessage()">
+        📧
+    </a>
+    <a class="up_button btn" href="#">
+        ☝
+    </a>
+</div>
 </body>
 <script type="text/javascript" src="javascript/staff.js"></script>
 </html>

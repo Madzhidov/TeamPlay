@@ -124,11 +124,11 @@ h3 {
     position: absolute;
     min-height: 232px;
     height: auto;
-    margin-top: -290px;
+    margin-top: -230px;
 }
 
 .item-img {
-    max-height: 230px;
+    height: 230px;
     max-width: 260px;
 }
 
@@ -144,7 +144,8 @@ h3 {
     text-align: center;
     vertical-align: center;
     border-radius: 7px;
-    margin: -269px auto auto 25px;
+    margin-top: -269px;
+    margin-left: 30px;
     padding: 5px;
     height: 248px;
     width: 215px;
@@ -166,6 +167,7 @@ h3 {
     width: 200px;
     font-size: 20px;
     position: relative;
+    margin-left: 10px;
     top: -40px
 
 }
@@ -177,7 +179,7 @@ h3 {
 .animal_milk-item {
     z-index: 2;
     max-width: 80%;
-    max-height: 230px;
+    height: 230px;
 }
 
 #sales .item-list {

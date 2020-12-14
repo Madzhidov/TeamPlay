@@ -43,11 +43,6 @@ const hover_handler = function (obj) {
     }
 }
 
-
-
-
-//Популярное - добавление контента
-
 //Листенер для info_icon
 const info_iconClickHandler = function (info_icon) {
     info_icon.addEventListener('click', function () {
@@ -96,4 +91,36 @@ for (let i = 1; i < switch_buttons.childNodes.length; i += 2) {
         }
         switched_item_lists[(i - 1) / 2].classList.remove('hidden')
     })
+}
+
+/*Create item cart from json.obj*/
+const createCard = function (obj) {
+    let span_el = document.createElement('span')
+    span_el.className = 'description-title'
+    span_el.textContent = obj.name
+    let div_el = [document.createElement('div'), document.createElement('div'),
+        document.createElement('div'),
+        document.createElement('div')]
+    div_el[0].className = 'item';
+    div_el[1].className = 'wrapper';
+    div_el[2].classList.add('item-description', 'hidden');
+    div_el[3].className = 'cost';
+    div_el[3].textContent = obj.cost
+    div_el[2].textContent = obj.description
+    div_el[2].prepend(div_el[3], span_el)
+    let img = [document.createElement('img'), document.createElement('img')]
+    img[0].className = 'info-img'
+    obj.onHover === null ?
+        img[1].classList.add('item-img') :
+        img[1].classList.add('item-img', obj.onHover.name)
+    img[0].src = 'img/main/info_icon.svg'
+    img[1].src = obj.img
+
+    div_el[1].append(img[1])
+
+    div_el[0].append(img[0], div_el[1], div_el[2])
+
+
+    info_iconClickHandler(img[0])
+    return div_el[0]
 }

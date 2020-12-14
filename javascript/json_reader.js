@@ -2,7 +2,9 @@ let switch_buttons_texts = new Map()
 let popular_pos = null
 var i = 0
 var switch_buttons = document.querySelector('.switch-buttons')
+const feedback_messages = document.querySelector('.feedback_messages')
 const item_lists = document.querySelectorAll('.item-list')
+/*Find product sections*/
 switch_buttons.childNodes.forEach(child => {
     if (child.textContent.replaceAll(/[\s\n]*/g, '') != '') {
         if (child.textContent.replaceAll(' ', '').toLowerCase() != 'популярное')
@@ -13,39 +15,7 @@ switch_buttons.childNodes.forEach(child => {
     }
 })
 
-
-/*Create item cart from json.obj*/
-const createCard = function (obj) {
-    let span_el = document.createElement('span')
-    span_el.className = 'description-title'
-    span_el.textContent = obj.name
-    let div_el = [document.createElement('div'), document.createElement('div'),
-        document.createElement('div'),
-        document.createElement('div')]
-    div_el[0].className = 'item';
-    div_el[1].className = 'wrapper';
-    div_el[2].classList.add('item-description', 'hidden');
-    div_el[3].className = 'cost';
-    div_el[3].textContent = obj.cost
-    div_el[2].textContent = obj.description
-    div_el[2].prepend(div_el[3], span_el)
-    let img = [document.createElement('img'), document.createElement('img')]
-    img[0].className = 'info-img'
-    obj.onHover === null ?
-        img[1].classList.add('item-img') :
-        img[1].classList.add('item-img', obj.onHover.name)
-    img[0].src = 'img/main/info_icon.svg'
-    img[1].src = obj.img
-
-    div_el[1].append(img[1])
-
-    div_el[0].append(img[0], div_el[1], div_el[2])
-
-
-    info_iconClickHandler(img[0])
-    return div_el[0]
-}
-
+/*Json Item creator*/
 $.getJSON('./JSONS/items.json').done(function (data) {
     data['items'].forEach(el => {
         try {
@@ -79,5 +49,12 @@ $.getJSON('./JSONS/items.json').done(function (data) {
     })
 })
 
-
+/*JSON comment creator*/
+$.getJSON('./JSONS/comments.json').done(function (data) {
+    let allComments = data['comments']
+    for (let i = 0; i < allComments.length; i++) {
+        i % 2 === 1 ? feedback_messages.append(createComment(allComments[i], true)) :
+            feedback_messages.append(createComment(allComments[i], false))
+    }
+})
 

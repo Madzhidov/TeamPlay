@@ -253,6 +253,25 @@ h3 {
     color: #0047FF;
 }
 
+.message .user .user_name,
+.message .user .age{
+    display: inline-block;
+}
+
+.message .user .age {
+    font-size: 1.2em;
+}
+
+.message .user .age::after {
+    content: " лет";
+}
+
+.message .user .age::before {
+    content: "\00a0 ";
+}
+.message .user .user_name::after {
+    content: ',';
+}
 .user_name .context {
     font-size: 0.5em;
     color: black;

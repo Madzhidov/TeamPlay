@@ -262,10 +262,6 @@ h3 {
     font-size: 1.2em;
 }
 
-.message .user .age::after {
-    content: " лет";
-}
-
 .message .user .age::before {
     content: "\00a0 ";
 }

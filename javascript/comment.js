@@ -14,7 +14,17 @@ const createComment = function (obj, right=false) {
     div_el[3].className = "user_name"
     div_el[3].textContent = obj.user_name
     div_el[4].className = "age"
-    div_el[4].textContent = obj.age
+    let age = parseInt(obj.age)
+    if (age % 10 === 1) {
+        age = age.toString() + ' год'
+    }
+    else if (age % 10 >=2 && age % 10 <= 4) {
+        age = age.toString() + ' года'
+    }
+    else{
+        age = age.toString() + ' лет'
+    }
+    div_el[4].textContent = age
     div_el[5].classList.add("mail", "hidden")
     div_el[5].textContent = obj.mail
     div_el[6].className = "context"

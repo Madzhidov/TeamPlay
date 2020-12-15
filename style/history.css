@@ -1,0 +1,20 @@
+.info {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    left: 0px;
+    background: #87D3FD;
+}
+.info img {
+    margin: 10px;
+    max-height: 315px;
+}
+p{
+    font-size: 36px;
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}

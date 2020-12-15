@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing</title>
+    <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="style/main.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script async type="text/javascript" src="javascript/sale.js"></script>
+    <script async type="text/javascript" src="javascript/gallery.js"></script>
+    <script async type="text/javascript" src="javascript/comment.js"></script>
+    <script async type="text/javascript" src="javascript/json_reader.js"></script>
+</head>
+<header>
+    <ul class="navigation inline">
+        <li>
+            Продукция
+        </li>
+        <li>
+            <a href="history.html">
+                О молоке
+            </a>
+        </li>
+        <li>
+            Доставка
+        </li>
+        <li>
+            <a href="contact.html">
+                Контакты
+            </a>
+        </li>
+    </ul>
+    <div class='phone'>+77512580128</div>
+    <a href="#">
+        <img id='logo' src="img/main/logo.png" alt="">
+    </a>
+</header>
+<div class="space">
+
+</div>
+<article id="preview">
+    <div class="space">
+    </div>
+    <div id="banner">
+        <div id="banner_txt">
+            Свежее молоко <br> прямо с фермы
+        </div>
+        <div class="btn" id='banner_btn'>
+            Оформить заявку
+        </div>
+    </div>
+    <div id="photo-banner">
+        <img id="photo-banner-img" src="img/main/milk.png" alt="">
+        <div class="slogan">
+            С заботой о Вас и Ваших детях!
+        </div>
+    </div>
+
+</article>
+<article id="goods">
+    <div class="title">
+        <h2>Продукция с нашей фермы!</h2>
+        <h3>Всегда свежая и питательная!</h3>
+    </div>
+    <div class="sale">
+        <div class="switch-buttons flex">
+            <div class="btn chosen">Популярное</div>
+            <div class="btn">Молоко</div>
+            <div class="btn">Сыр</div>
+            <div class="btn">Конина</div>
+        </div>
+        <!--Популярное-->
+        <div class="item-list flex switched"></div>
+        <!--Молоко-->
+        <div class="item-list flex hidden switched"></div>
+        <!--Сыр-->
+        <div class="item-list flex hidden switched"></div>
+        <!--Конина-->
+        <div class="item-list flex hidden switched"></div>
+    </div>
+</article>
+<article id='sales'>
+    <div class="title">
+        <h2>Выгодное предложение!</h2>
+        <h3>Только сегодня!</h3>
+    </div>
+    <!--Sales-->
+    <div class="item-list flex"></div>
+</article>
+<div class="space" style="height: 20px"></div>
+<article id="gallery">
+    <div class="title">
+        <h2>Наша ферма:</h2>
+    </div>
+    <div id="horse_gallery" class="flex">
+        <img src="img/Gallery/horse-1.jpg" id="main_photo">
+        <ul id="horse_gallery_thumbnails" class="flex">
+            <li>
+                <img src="img/Gallery/horse-1.jpg" class="thumbnail active">
+            </li>
+            <li>
+                <img src="img/Gallery/horse-2.jpg" class="thumbnail">
+            </li>
+            <li>
+                <img src="img/Gallery/horse-3.jpg" class="thumbnail">
+            </li>
+            <li>
+                <img src="img/Gallery/horse-4.jpg" class="thumbnail">
+            </li>
+            <li>
+                <img src="img/Gallery/horse-5.jpg" class="thumbnail ">
+            </li>
+            <li>
+                <img src="img/Gallery/horse-6.jpg" class="thumbnail">
+            </li>
+        </ul>
+    </div>
+</article>
+<article id="feedback">
+    <div class="title">
+        <h2>Отзывы покупателей</h2>
+        <h3>Благодаря вашим отзывам мы становимся лучше!</h3>
+    </div>
+    <div class="feedback_messages flex">
+
+    </div>
+</article>
+<article id="feedback_form">
+    <div class="title">
+        <h2>Оставить заявку:</h2>
+    </div>
+    <div class="feedback_form_block">
+        <form>
+            Email: <input type="email" name="email"><br>
+            Name: <input type="text" name="user_name"><br>
+            Message: <input type="text" name="message_text"><br>
+            <input type="button" name="submit" value="Submit" onclick="sendMessage()">
+        </form>
+    </div>
+</article>
+<div id="up_buttons">
+    <a class="up_button btn" onclick="sendMessage()">
+        📧
+    </a>
+    <a class="up_button btn" href="#">
+        ☝
+    </a>
+</div>
+</body>
+<script type="text/javascript" src="javascript/staff.js"></script>
+</html>

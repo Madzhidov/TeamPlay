@@ -1,0 +1,334 @@
+#preview {
+    background: url(../img/main/farm.png) no-repeat, rgb(135, 196, 253);
+    background-size: cover;
+    height: 800px;
+}
+
+
+#preview .space {
+    height: 300px;
+}
+
+#banner {
+    width: 423px;
+    padding-left: 10vw;
+}
+
+#banner_txt {
+    font-size: 64px;
+    font-family: Mistral;
+}
+
+#banner_btn {
+    display: inline-block;
+    font-size: 2em;
+    color: #BFFFC5;
+    background-color: #24B732;
+    font-weight: bold;
+    padding-left: 66px;
+    padding-right: 66px;
+}
+
+#photo-banner {
+    float: right;
+    margin-top: -290px;
+}
+
+#photo-banner-img {
+    width: 44vw;
+}
+
+.slogan {
+    font-family: 'Bad Script';
+    text-wrap: none;
+    text-align: center;
+    font-size: 2.2em;
+}
+
+#goods {
+    display: block;
+}
+h3 {
+    font-style: italic;
+    font-size: 24px;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 5px;
+}
+
+.title img {
+    position: center;
+    text-align: center;
+}
+
+.switch-buttons {
+    margin-top: 19px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.switch-buttons .btn {
+    width: 138px;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.chosen {
+    background-color: #24B732;
+    color: #BFFFC5;
+}
+
+.item-list {
+
+    width: 100%;
+    height: auto;
+    background-color: #8CD4FD;
+    border-radius: 4px;
+}
+
+.item {
+    margin-right: 16px;
+    margin-top: 3px;
+    height: 329px;
+    width: 285px;
+    background-color: rgba(204, 252, 255, 0.80);
+    border-radius: 53px;
+}
+
+.info-img {
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 24px;
+    margin-left: 220px;
+}
+
+.wrapper {
+    display: table-cell;
+    height: inherit;
+    width: inherit;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.foreground_item_img {
+    display: block;
+    position: absolute;
+    min-height: 232px;
+    height: auto;
+    margin-top: -230px;
+}
+
+.item-img {
+    height: 230px;
+    max-width: 260px;
+}
+
+.opacity-img {
+    opacity: 20%;
+}
+
+.item-description {
+    position: absolute;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: center;
+    border-radius: 7px;
+    margin-top: -269px;
+    margin-left: 30px;
+    padding: 5px;
+    height: 248px;
+    width: 215px;
+    background: rgba(0, 128, 255, 0.35);
+}
+
+.hidden {
+    display: none;
+}
+
+.description-title {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.cost {
+    color: red;
+    width: 200px;
+    font-size: 20px;
+    position: relative;
+    margin-left: 10px;
+    top: -40px
+
+}
+
+#sales {
+    display: block;
+}
+
+.animal_milk-item {
+    z-index: 2;
+    max-width: 80%;
+    height: 230px;
+}
+
+#sales .item-list {
+    background-color: #8CD4FD;
+    margin-top: 20px;
+}
+
+#sales .item {
+    background-color: rgba(255, 205, 75, 0.51);
+}
+
+#sales .item-description {
+    background: rgb(69, 137, 255);
+}
+
+#sales .cost {
+    color: #4d49cb;
+}
+
+#gallery {
+    padding: 10px;
+    background-color: #8CD4FD;
+}
+
+#horse_gallery_thumbnails {
+    margin-left: 2px;
+    flex-direction: column;
+    max-height: 500px;
+}
+
+.thumbnail {
+    border-radius: 25px;
+    height: 93px;
+    width: 130px;
+    border: rgba(0, 0, 0, 0) 2px solid;
+}
+
+.active {
+    border: #00ffb9 2px solid;
+}
+
+#main_photo {
+    height: 495px;
+    width: 800px;
+    border-radius: 10px;
+}
+.feedback_messages{
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: #8CD4FD;
+    margin-top: 20px;
+    
+}
+.message {
+    margin: 5px;
+    flex-wrap: nowrap;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.message .content {
+    margin-left: 5px;
+}
+
+.message .user_name {
+    margin: 5px 0;
+    font-size: 36px;
+    color: #0047FF;
+}
+
+.message .user .user_name,
+.message .user .age{
+    display: inline-block;
+}
+
+.message .user .age {
+    font-size: 1.2em;
+}
+
+.message .user .age::before {
+    content: "\00a0 ";
+}
+.message .user .user_name::after {
+    content: ',';
+}
+.user_name .context {
+    font-size: 0.5em;
+    color: black;
+}
+
+.message .thumbnail {
+    height: 100px;
+    width: auto;
+}
+.right {
+    margin-left: 45%;
+}
+
+@media only screen and (max-width: 900px) {
+    #main_photo {
+        height: 247px;
+        width: 400px
+    }
+    .message {width: 80%}
+    .right {margin: 5px}
+}
+
+@media only screen and (max-width: 1280px) {
+    #preview * {
+        margin: 0;
+        padding: 0;
+        float: none
+    }
+
+    #preview .space {
+        height: 150px
+    }
+
+    #banner_btn {
+        display: block;
+        padding: 15px 0;
+        width: 100%
+    }
+
+    #banner {
+        display: block;
+        text-align: center;
+        width: auto
+    }
+
+    #photo-banner {
+        display: block;
+        text-align: center
+    }
+
+    #photo-banner-img {
+        width: 455.49px;
+    }
+
+    #horse_gallery_thumbnails {
+        flex-direction: row;
+        margin: 2px 2px;
+    }
+
+
+}
+
+@media only screen and (min-width: 1280px) {
+}

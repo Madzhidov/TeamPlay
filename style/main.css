@@ -183,7 +183,7 @@ h3 {
 }
 
 #sales .item-list {
-    background-color: rgba(255, 0, 0, 0.71);
+    background-color: #8CD4FD;
     margin-top: 20px;
 }
 
@@ -230,9 +230,8 @@ h3 {
     flex-direction: column;
     justify-content: center;
     padding: 20px;
-    background: #87EFFD;
+    background: #8CD4FD;
     margin-top: 20px;
-    border-radius: 7px;
 }
 .message {
     margin: 5px;
